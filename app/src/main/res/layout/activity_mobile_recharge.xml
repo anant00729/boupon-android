@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smoke"
+    tools:context="com.an2t.android.bouponapp.recharge.MobileRechargeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/main_top_bar"
+                layout="@layout/common_header" />
+
+            <TextView
+                android:id="@+id/tv_make_payment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_top_bar"
+                android:layout_marginLeft="@dimen/thrity_two"
+                android:layout_marginTop="@dimen/sixteen"
+                android:fontFamily="sans-serif"
+                android:text="@string/new_payment"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/frame_add_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_make_payment_title"
+                android:layout_marginTop="@dimen/sixteen" />
+
+            <TextView
+                android:id="@+id/tv_recent_payment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frame_add_number"
+                android:layout_marginLeft="@dimen/thrity_two"
+                android:layout_marginTop="@dimen/sixteen"
+                android:fontFamily="sans-serif"
+                android:text="@string/recent_payment"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_recent_payment_title">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_recharge_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginTop="@dimen/sixteen">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_recharge_records"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_no_recharge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:padding="@dimen/eight"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_no_record"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                app:srcCompat="@drawable/ic_folder" />
+
+                            <TextView
+
+                                android:id="@+id/tv_no_coupon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img_no_record"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/no_recharge_contacts"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

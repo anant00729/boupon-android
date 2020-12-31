@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="@dimen/eight"
+        android:paddingTop="@dimen/eight"
+        android:paddingRight="@dimen/sixteen"
+        android:paddingLeft="@dimen/sixteen"
+        android:id="@+id/rl_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/img_profile_his"
+        android:layout_width="@dimen/history_img_width"
+        android:layout_height="@dimen/history_img_width"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ic_user_his" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_toRightOf="@id/img_profile_his"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="@dimen/btn_login_text_size"
+            android:lines="1"
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/one_forty"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+             />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="@dimen/sixteen"
+        android:layout_height="@dimen/sixteen"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_right_arrow" />
+
+
+    <TextView
+        android:maxLength="8"
+        android:layout_toLeftOf="@id/img_arrow"
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/four"
+        android:textColor="@color/light_green"
+        android:textSize="@dimen/btn_login_text_size" />
+
+    </RelativeLayout>
+<TextView
+    android:visibility="gone"
+    android:layout_marginRight="@dimen/sixteen"
+    android:layout_marginLeft="@dimen/sixteen"
+    android:layout_below="@id/rl_frame"
+    android:background="@color/gray_login_drawable"
+    android:layout_width="match_parent"
+    android:layout_height=".2dp" />
+</RelativeLayout>

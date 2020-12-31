@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- TODO: Dimens in the multiple of four and eight -->
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="thrity_two">32dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="sixty_four">64dp</dimen>
+
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="thirty_three">33dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="one_twenty">120dp</dimen>
+    <dimen name="two_forty">240dp</dimen>
+    <dimen name="one_eighty">180dp</dimen>
+    <dimen name="one_forty">140dp</dimen>
+    <dimen name="one_thirty">130dp</dimen>
+    <dimen name="six">6dp</dimen>
+
+    <dimen name="two_hundered">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="fifty_four">54dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="forty_eight">48dp</dimen>
+    <dimen name="thrity_four">34dp</dimen>
+    <!-- TODO: Dimens in the multiple of four and eight -->
+
+    <!-- TODO: Login Page  -->
+    <dimen name="logo_width">200dp</dimen>
+    <dimen name="logo_height">100dp</dimen>
+    <dimen name="margin_edit_text">64dp</dimen>
+    <dimen name="margin_edit_text_top">16dp</dimen>
+    <dimen name="btn_margin_top">24dp</dimen>
+
+    <dimen name="login_btn_width">100dp</dimen>
+    <dimen name="login_btn_height">40dp</dimen>
+    <dimen name="btn_login_text_size">16sp</dimen>
+    <dimen name="edit_text_height">55dp</dimen>
+    <!-- TODO: End -->
+
+
+    <!--TODO : Toolbar -->
+
+    <dimen name="toolbar_height">70dp</dimen>
+    <dimen name="toolbar_dimen_logo">50dp</dimen>
+
+    <!--TODO : End-->
+
+    <!--TODO : Home Fragment-->
+    <dimen name="image_size_menu">70dp</dimen>
+    <dimen name="amount_back_width">56dp</dimen>
+
+    <!--Grid Menu Dimens-->
+    <dimen name="container_width">120dp</dimen>
+    <dimen name="container_height">120dp</dimen>
+
+    <dimen name="coupon_logo_widht">60dp</dimen>
+    <dimen name="coupon_logo_height">50dp</dimen>
+
+    <dimen name="grid_menu_size">40dp</dimen>
+
+    <dimen name="history_img_width">24dp</dimen>
+    <!--TODO : End-->
+
+
+    <!--TODO : Bottom Navigation-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">14sp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">56dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">32dp</dimen>
+    <!--TODO : END -->
+
+    <!--TODO: Confirm Number Fragment-->
+    <dimen name="image_profile_size">40dp</dimen>
+    <dimen name="twenty_four">24dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="app_bar_height">160dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="one_sixty">160dp</dimen>
+    <!--TODO: End-->
+
+    <!-- Intro Screen -->
+    <dimen name="dots_height">34dp</dimen>
+    <dimen name="dots_bottom_margin">20dp</dimen>
+    <dimen name="img_width">120dp</dimen>
+    <dimen name="img_height">120dp</dimen>
+    <dimen name="slide_title">30sp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="one_fifty">150dp</dimen>
+
+</resources>

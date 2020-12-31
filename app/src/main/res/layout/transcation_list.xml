@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_trans_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/sixteen"
+            android:text="ajsdhkasjhdkas"
+            android:textColor="@color/light_green"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trans_id"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/eight"
+            android:text="ksldjaksldj" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/eight"
+            android:text="sakldjas" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_trans_id"
+            android:layout_marginRight="@dimen/sixteen"
+            android:layout_marginTop="@dimen/eight"
+            android:text="aksdhjkash" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_date"
+            android:layout_marginRight="@dimen/sixteen"
+            android:layout_marginTop="@dimen/eight"
+            android:text="kasjdasd" />
+
+        <TextView
+            android:id="@+id/tv_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mobile"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:paddingBottom="@dimen/eight"
+            android:text="kasldja" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_deals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_amt"
+            android:layout_marginBottom="@dimen/sixteen"
+             />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

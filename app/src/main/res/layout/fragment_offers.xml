@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.fragments.OffersFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:elevation="4dp"
+        android:id="@+id/tab_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabBackground="@android:color/white"
+        app:tabTextColor="@color/colorPrimary"
+        android:background="@android:color/white"
+        app:tabSelectedTextColor="@color/logo_color_one"
+        app:tabIndicatorColor="@color/logo_color_one"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/tab_items"
+        android:id="@+id/vp_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

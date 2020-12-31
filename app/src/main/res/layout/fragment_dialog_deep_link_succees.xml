@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_single_food"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="56dp"
+
+    android:background="@android:color/transparent"
+    tools:context="com.an2t.android.bouponapp.recharge.FreeDealsRechargeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_frame_single_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_back_product"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@color/black_trans" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_flat_image_final" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@color/black_trans" />
+
+            <TextView
+                android:id="@+id/tv_single_deal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="70dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/congratulations"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_single_deal_name"
+                android:id="@+id/tv_single_deal_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:text="@string/coupon_received_message"
+                android:textColor="@color/light_green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_back_product">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_later"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/blue"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/not_now"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/indian_red"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/view_gift"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_for_single_deal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:padding="@dimen/eight"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/ic_gift"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    tools:context="com.an2t.android.bouponapp.main.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:theme="@style/ToolbarTheme"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:gravity="center" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_marginTop="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/forty"
+            android:id="@+id/shimmer_view_container"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/boupon_logo" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_toolbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/eight"
+            android:layout_toRightOf="@id/shimmer_view_container"
+            android:text="Arshad"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_login_text_size" />
+    </RelativeLayout>
+</RelativeLayout>

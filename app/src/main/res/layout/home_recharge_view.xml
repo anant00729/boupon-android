@@ -1,0 +1,315 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smoke"
+    tools:context=".main.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_img_restaturant_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/back_recycler_view_spotlight" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_deals_spotlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                android:paddingBottom="@dimen/thrity_two"
+                android:visibility="gone" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="-20dp"
+                android:id="@+id/card_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vp_img_restaturant_img"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/twelve"
+                android:layout_marginRight="@dimen/twelve"
+
+                android:foregroundGravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:textColor="@color/green_dark"
+                        android:id="@+id/tv_boupon_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginLeft="@dimen/sixteen"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:text="@string/boupon_services"
+                        android:textSize="@dimen/btn_login_text_size" />
+
+                    <TextView
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_below="@id/tv_boupon_service"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:background="@color/snow" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line3">
+
+                        <androidx.recyclerview.widget.RecyclerView
+
+                            android:id="@+id/rv_main_page_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sixteen"
+                            android:clipToPadding="false" />
+
+                        <TextView
+                            android:id="@+id/partition"
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:layout_below="@id/rv_main_page_menu"
+                            android:background="@color/snow" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_purchase_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_menu"
+                android:layout_marginTop="@dimen/thrity_two"
+                android:elevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/green_dark"
+                        android:id="@+id/menu_fast_rechrge_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sixteen"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:text="@string/fast_recharge"
+                        android:textSize="@dimen/btn_login_text_size" />
+
+                    <TextView
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_below="@id/menu_fast_rechrge_title"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:background="@color/snow" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_purchase_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/line1"
+                        android:paddingBottom="@dimen/sixteen" />
+
+                    <RelativeLayout
+                        android:padding="@dimen/eight"
+                        android:visibility="gone"
+                        android:id="@+id/rl_no_recharge"
+                        android:layout_marginTop="55dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img_no_record"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/ic_folder" />
+
+                        <TextView
+
+                            android:id="@+id/tv_no_coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_no_record"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/no_recharge_contacts"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginBottom="@dimen/sixteen"
+                android:layout_below="@id/card_purchase_history"
+                android:id="@+id/card_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twelve"
+                android:layout_marginRight="@dimen/twelve"
+                android:layout_marginTop="@dimen/thrity_two">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/green_dark"
+                        android:id="@+id/tv_title_main_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sixteen"
+                        android:layout_marginTop="@dimen/sixteen"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/profile"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/btn_login_text_size" />
+
+
+                    <TextView
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_below="@id/tv_title_main_menu"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:background="@color/snow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line4"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/sixteen"
+                        android:paddingLeft="@dimen/eight"
+                        android:paddingRight="@dimen/eight"
+                        android:paddingTop="@dimen/sixteen">
+
+                        <LinearLayout
+                            android:id="@+id/ll_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/image_size_menu"
+                                android:layout_height="@dimen/image_size_menu"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/main_menu_circle"
+                                android:padding="@dimen/sixteen"
+                                app:srcCompat="@drawable/ic_profile" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/eight"
+                                android:text="@string/profile"
+                                android:textSize="@dimen/btn_login_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_coupon_click"
+                                android:layout_width="@dimen/image_size_menu"
+                                android:layout_height="@dimen/image_size_menu"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/main_menu_circle"
+                                android:padding="@dimen/sixteen"
+                                app:srcCompat="@drawable/ic_coupon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/eight"
+                                android:text="@string/my_coupons"
+                                android:textSize="@dimen/btn_login_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_trans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_trans"
+                                android:layout_width="@dimen/image_size_menu"
+                                android:layout_height="@dimen/image_size_menu"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/main_menu_circle"
+                                android:padding="@dimen/sixteen"
+                                app:srcCompat="@drawable/ic_transaction" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/eight"
+                                android:text="@string/transaction"
+                                android:textSize="@dimen/btn_login_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

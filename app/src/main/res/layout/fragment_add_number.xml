@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/smoke"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_frame_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/thrity_two"
+        android:background="@drawable/amount_enter_back"
+        >
+
+
+        <ImageView
+            android:layout_marginLeft="@dimen/twelve"
+            android:layout_centerVertical="true"
+            android:elevation="12dp"
+            app:srcCompat="@drawable/ic_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/forty"
+            android:textSize="18sp"
+            android:elevation="12dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_bangla_code"
+            android:text="+88"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:background="@drawable/amount_enter_back"
+            android:layout_toRightOf="@id/tv_bangla_code"
+            android:id="@+id/in_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="@dimen/twelve"
+             />
+        <ImageView
+            android:id="@+id/img_btn_contact_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/eight"
+            app:srcCompat="@drawable/ic_phone_book" />
+
+        <ImageView
+            android:id="@+id/img_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/four"
+            android:layout_toLeftOf="@id/img_btn_contact_list"
+            app:srcCompat="@drawable/ic_cancel_gray" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginBottom="@dimen/sixteen"
+        android:background="@drawable/btn_select_rev"
+        android:textColor="@drawable/btn_select_text_color_rev"
+        android:textSize="18sp"
+        android:id="@+id/btn_next"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_frame_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/thrity_two"
+        android:text="@string/next"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+

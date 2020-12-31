@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_single_food"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="56dp"
+    android:background="@android:color/transparent"
+    android:maxWidth="400dp"
+    android:minWidth="480dp"
+    tools:context="com.an2t.android.bouponapp.recharge.FreeDealsRechargeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_frame_single_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+
+                android:id="@+id/img_back_product"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:scaleType="centerCrop"
+                android:src="@color/black_trans" />
+
+            <TextView
+                android:id="@+id/tv_single_deal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="70dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/deal_name"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_below="@id/tv_single_deal_name"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_single_deal_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ellipsize="end"
+                        android:text="@string/no_desc"
+                        android:textColor="@color/light_green"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_single_deal_value"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/category"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_toRightOf="@id/tv_category"
+                        android:id="@+id/tv_category_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_single_deal_value"
+                        android:layout_marginBottom="8dp"
+                        android:text="sdjfhsdk"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@android:color/white"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_title_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_category"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/description"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_single_deal_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_title_desc"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ellipsize="end"
+                        android:text="@string/no_desc"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_single_deal_desc"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/store_details"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_store_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_store"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ellipsize="end"
+                        android:text="@string/no_desc"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_expiry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_store_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/expires"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_expires_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_store_content"
+                        android:layout_toRightOf="@id/tv_expiry_date"
+                        android:text="askjdhjasd"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/tv_tac_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_expiry_date"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/termsandcondition"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/sixteen"
+                        android:id="@+id/tv_tac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_tac_title"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="@dimen/eight"
+                        android:text="sdjhfjksdhf"
+                        android:textColor="@android:color/white" />
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@id/img_back"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_green"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/recharge"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_for_single_deal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/white_circle"
+        android:elevation="4dp"
+        android:src="@drawable/boupon_logo"
+        app:civ_border_color="@color/light_green"
+        app:civ_border_width="2dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/one_fifty"
+    android:layout_height="@dimen/one_forty"
+    android:paddingLeft="@dimen/four"
+    android:paddingRight="@dimen/four"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_grid_menu_main"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_offer" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/btn_login_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteen"
+        android:id="@+id/tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_menu"
+        android:layout_gravity="center_horizontal"
+        android:text="$#%#" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

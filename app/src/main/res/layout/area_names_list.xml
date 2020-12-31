@@ -1,0 +1,17 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<Button android:layout_marginBottom="@dimen/sixteen"
+    android:background="@drawable/back_area_names"
+    android:textColor="@color/green_dark"
+    android:textSize="14sp"
+    android:id="@+id/btn_area_names"
+    android:layout_width="190dp"
+    android:layout_height="45dp"
+    android:layout_centerHorizontal="true"
+    android:text="@string/next"
+     />
+</RelativeLayout>

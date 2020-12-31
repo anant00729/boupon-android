@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_back_login"
+    tools:context="com.an2t.android.bouponapp.forgot_password.OTPActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/forty"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+
+
+    <EditText
+        android:layout_marginTop="@dimen/sixty_four"
+        android:id="@+id/in_otp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_below="@id/img_logo"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
+        android:background="@drawable/edit_text_back_login"
+        android:hint="@string/enter_otp"
+        android:inputType="phone"
+        android:lines="1"
+        android:padding="@dimen/sixteen"
+        android:textColor="@color/gray_login_drawable"
+        android:textSize="@dimen/btn_login_text_size"/>
+
+
+    <Button
+        android:id="@+id/btn_register_otp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_below="@id/in_otp"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:background="@drawable/btn_sign_in"
+        android:text="@string/register"
+        android:textSize="@dimen/btn_login_text_size"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_sign_in_otp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_below="@+id/btn_register_otp"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:background="@drawable/btn_register"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/btn_login_text_size"
+        android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

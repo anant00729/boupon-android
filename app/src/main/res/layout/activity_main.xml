@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_container"
+    android:layout_height="match_parent"
+    tools:context="com.an2t.android.bouponapp.main.MainActivity">
+
+
+    <include android:id="@+id/top_bar" layout="@layout/content_main" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="55dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_no_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_retry"
+            android:id="@+id/img_offline_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:text="@string/hello_blank_fragment" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/gray_login_drawable"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_offline_image"
+            android:text="@string/oops"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:layout_marginBottom="@dimen/sixteen"
+            android:background="@drawable/btn_select_rev"
+            android:textColor="@drawable/btn_select_text_color_rev"
+            android:textSize="18sp"
+            android:id="@+id/btn_retry"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/thrity_two"
+            android:text="@string/retry"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:id="@+id/bottomNavigationView"
+            app:itemIconTint="@drawable/main_icon_color"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/black_trans"
+            app:itemTextColor="@drawable/main_icon_color"
+            app:menu="@menu/navigation" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: App Main Colors -->
+    <color name="colorPrimary">#109761</color>
+    <color name="colorPrimaryDark">#095939</color>
+    <color name="colorAccent">#0d6c74</color>
+    <!-- TODO: App Main Colors -->
+
+    <!-- TODO: Logo Colors -->
+    <color name="logo_color_one">#0d6c74</color>
+    <color name="logo_color_two">#109761</color>
+    <color name="light_green">#12a66a</color>
+    <color name="logo_color_one_dark">#062f33</color>
+    <color name="logo_color_two_dark">#095939</color>
+    <color name="gray_login_drawable">#919191</color>
+    <color name="snow">#f0f4f5</color>
+    <color name="snow_dark">#cad6d9</color>
+    <color name="lavender">#e8e8e8</color>
+    <color name="syk_blue">#b0c0ce</color>
+    <color name="blue_shade">#C7CFE2</color>
+    <color name="green_white">#29bf83</color>
+    <color name="green_dark">#219b6a</color>
+    <color name="smoke">#eff0f1</color>
+    <color name="dark_slate_gray">#333333</color>
+    <color name="silver">#bec2c5</color>
+    <color name="grainsboro">#dadada</color>
+    <color name="indian_red">#dd5252</color>
+    <color name="mediumtortoize">#52c1db</color>
+    <color name="dogerblue">#0078d1</color>
+    <color name="success">#54b768</color>
+    <color name="dimgray">#666666</color>
+    <color name="blue">#0099FF</color>
+    <color name="back_light_green">#67e981</color>
+    <color name="back_dark_green">#25a64e</color>
+    <color name="black_trans">#b0000000</color>
+    <color name="black_trans_dark">#ba000000</color>
+    <color name="black_trans_grad">#5e000000</color>
+    <color name="black_trans_grad_light">#4b000000</color>
+    <color name="dark_green_back">#013323</color>
+    <!-- TODO: Logo Colors -->
+
+    <!-- Screens background -->
+    <color name="bg_screen1">#b12515</color>
+    <color name="bg_screen2">#FFBB00</color>
+    <color name="bg_screen3">#74a443</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active">#000000</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+
+    <color name="mid_night_blue">#07314a</color>
+    <color name="light_pink">#f06881</color>
+
+    <color name="color_three">#EF5350</color>
+    <color name="color_four">#7E57C2</color>
+
+</resources>

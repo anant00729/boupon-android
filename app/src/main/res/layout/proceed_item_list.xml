@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/boupon_logo" />
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLength="16"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_toRightOf="@id/img_item"
+        android:text="ajsdhaskdjh"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_toRightOf="@id/tv_item_title"
+        android:text="100"
+        android:textColor="@color/light_green"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_weight="11"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_cancel"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/smoke"
+    tools:context="com.an2t.android.bouponapp.recharge.fragment_free_deals.ConfirmNumber">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:layout_marginTop="@dimen/twenty_four"
+                    android:text="@string/change"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+
+                    android:id="@+id/ll_number_confirm_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="@dimen/image_profile_size"
+                        android:layout_height="@dimen/image_profile_size"
+                        android:background="@drawable/circle_back"
+                        android:padding="6dp"
+                        android:src="@drawable/boupon_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_confirm_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="123123123"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_below="@id/ll_number_confirm_frame"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:background="@color/smoke" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_for_payment_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btn_prepaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:text="@string/prepaid" />
+
+                        <RadioButton
+                            android:id="@+id/btn_postpaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/postpaid" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/frame"
+                    android:layout_width="@dimen/two_hundered"
+                    android:layout_height="@dimen/forty"
+                    android:layout_below="@id/rl_radio_group"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/thrity_two"
+                    android:background="@drawable/amount_enter_back">
+
+                    <Spinner
+                        android:id="@+id/spin_operator"
+                        android:layout_width="@dimen/two_hundered"
+                        android:layout_height="@dimen/forty"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/amount_enter_back"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/eight"
+                        app:srcCompat="@drawable/ic_down_arrow" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_below="@id/frame"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:background="@color/smoke" />
+
+                <EditText
+
+                    android:id="@+id/in_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:width="@dimen/two_hundered"
+                    android:background="@drawable/amount_enter_back"
+                    android:hint="@string/enter_amount"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/line2"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:background="@drawable/btn_select_rev"
+                    android:text="@string/recharge"
+                    android:textColor="@drawable/btn_select_text_color_rev" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.an2t.android.bouponapp.field_area.FieldAreaActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/content_main" />
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_bar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="12dp"
+                    app:srcCompat="@drawable/ic_arrow_back" />
+
+
+                <TextView
+                    android:id="@+id/tv_select_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:text="@string/pick_a_city"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rl_locality_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_select_city"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginRight="@dimen/sixteen"
+                    android:layout_marginTop="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_below="@id/rl_locality_city"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@color/grainsboro" />
+
+                <RelativeLayout
+
+                    android:id="@+id/rl_frame_two"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/rl_locality_city"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/success_paid_back"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_paid" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:text="৳"
+                        android:textColor="#32BEA6"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:id="@+id/rl_main_container"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/rl_frame_two"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_back_green"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_pointer_main" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_auto_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_main_container"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:text="@string/auto_detect_location"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_below="@id/tv_auto_search"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/grainsboro" />
+
+                <RelativeLayout
+
+                    android:id="@+id/rl_frame"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/tv_auto_search"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/success_paid_back"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_paid" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:text="৳"
+                        android:textColor="#32BEA6"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_select_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_frame"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:text="@string/pick_a_locality"
+                    android:textSize="14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_locality_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_select_area"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginRight="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen" />
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".8">
+
+            <ImageView
+                android:id="@+id/img_offer_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight=".8">
+
+            <TextView
+                android:id="@+id/tv_title_offer_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:lines="2"
+                android:singleLine="true"
+                android:text="askldjaskldjaskldj"
+                android:textColor="@color/light_green"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_desc_offer_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_offer_item"
+                android:layout_marginTop="4dp"
+                android:ellipsize="marquee"
+                android:lines="2"
+                android:text="askdjkasdhjkasd"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_price_offer_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_desc_offer_item"
+                android:text="৳1201"
+                android:textColor="@color/light_green"
+                android:textSize="20sp" />
+
+            <!--<TextView
+                android:id="@+id/tv_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_desc_offer_item"
+                android:layout_marginLeft="@dimen/four"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/tv_price_offer_item"
+                android:text="@string/points"
+                android:textColor="@color/light_green"
+                android:textSize="14sp" />-->
+
+            <ImageView
+                android:id="@+id/img_pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_price_offer_item"
+                android:layout_marginLeft="4dp"
+
+                android:layout_marginTop="@dimen/six"
+                android:textColor="@android:color/black"
+                app:srcCompat="@drawable/ic_home_free_deals" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_price_offer_item"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/six"
+                android:layout_toRightOf="@id/img_pointer"
+                android:text="@string/expires"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_pointer"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/six"
+                android:textColor="@android:color/black"
+                app:srcCompat="@drawable/ic_map_pointer_gray" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_pointer"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/six"
+                android:layout_toRightOf="@id/img_pointer"
+                android:text="@string/expires"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_expires"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_home"
+                android:layout_marginTop="@dimen/six"
+                android:text="@string/expires"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_date_expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_home"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/six"
+                android:layout_toRightOf="@id/tv_expires"
+                android:text="12/12/12"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/btn_see_more"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/view"
+            android:textColor="@android:color/white"
+            android:textSize="7sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
