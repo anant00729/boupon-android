@@ -53,7 +53,7 @@ public class ProceedItemsAdpater extends RecyclerView.Adapter<ProceedItemsAdpate
         holder.tv_item_value.setText(item.getValue());
         holder.tv_item_title.setText(item.getTitle());
         Picasso.with(mContext)
-                .load(BASE_IMAGE_URL+item.getMainImage())
+                .load(item.getMainImage())
                 .resize(80,55)
                 .into(holder.img_item);
 

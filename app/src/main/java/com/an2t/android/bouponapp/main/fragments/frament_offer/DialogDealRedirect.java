@@ -140,13 +140,13 @@ public class DialogDealRedirect extends DialogFragment {
             }
 
             Picasso.with(getContext())
-                    .load(BASE_IMAGE_URL + item.getMainImage())
+                    .load(item.getMainImage())
                     .resize(250, 180)
                     .placeholder(R.drawable.view_pager_banner_back)
                     .into(img_for_single_deal);
 
             Picasso.with(getContext())
-                    .load(BASE_IMAGE_URL + item.getMainImage())
+                    .load( item.getMainImage())
                     .resize(420, 390)
                     .placeholder(R.drawable.view_pager_banner_back)
                     .into(img_back);
@@ -190,11 +190,11 @@ public class DialogDealRedirect extends DialogFragment {
             }
 
             Glide.with(getContext())
-                    .load(BASE_IMAGE_URL + itemSpotLight.getMainImage())
+                    .load( itemSpotLight.getMainImage())
                     .into(img_for_single_deal);
 
             Glide.with(getContext())
-                    .load(BASE_IMAGE_URL + itemSpotLight.getMainImage())
+                    .load(itemSpotLight.getMainImage())
                     .into(img_back);
 
             tv_tac.setText(Html.fromHtml(itemSpotLight.getTnc()).toString());

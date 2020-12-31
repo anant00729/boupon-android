@@ -72,6 +72,17 @@ public class GetSpotlightImages {
         @Expose
         private Boolean isFeatured;
 
+        @SerializedName("key")
+        @Expose
+        private String key;
+
+        public String getKey() {
+            return key;
+        }
+
+        public void setKey(String key) {
+            this.key = key;
+        }
 
         public Boolean getFeatured() {
             return isFeatured;
@@ -153,6 +164,7 @@ public class GetSpotlightImages {
             dest.writeString(this.tnc);
             dest.writeString(this.category);
             dest.writeValue(this.isFeatured);
+            dest.writeValue(this.key);
         }
 
         public Item() {
@@ -166,6 +178,7 @@ public class GetSpotlightImages {
             this.expiry = in.readString();
             this.tnc = in.readString();
             this.category = in.readString();
+            this.key = in.readString();
             this.isFeatured = (Boolean) in.readValue(Boolean.class.getClassLoader());
         }
 

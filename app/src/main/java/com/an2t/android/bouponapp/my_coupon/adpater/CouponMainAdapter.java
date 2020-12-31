@@ -93,7 +93,7 @@ public class CouponMainAdapter extends RecyclerView.Adapter<CouponMainAdapter.Co
                     .into(holder.img_offer_item);
         }else{
             Picasso.with(mContext)
-                    .load(BASE_IMAGE_URL+mCoupon.getImage())
+                    .load(mCoupon.getImage())
                     .into(holder.img_offer_item);
         }
 

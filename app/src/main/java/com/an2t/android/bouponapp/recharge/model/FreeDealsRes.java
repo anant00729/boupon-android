@@ -16,8 +16,6 @@ import java.util.List;
 
 public class FreeDealsRes {
 
-
-
     @SerializedName("phoneNumber")
     @Expose
     private String phoneNumber;

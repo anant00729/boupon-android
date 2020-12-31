@@ -49,7 +49,7 @@ public class HomeSpotLightAdapter extends RecyclerView.Adapter<HomeSpotLightAdap
 
 
         Picasso.with(mContext)
-                .load(BASE_IMAGE_URL+image.getMainImage())
+                .load(image.getMainImage())
                 .resize(300,230)
                 .placeholder(R.drawable.boupon_logo)
                 .into(holder.img_spotlight);

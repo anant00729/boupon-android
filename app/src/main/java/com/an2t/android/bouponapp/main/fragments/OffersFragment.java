@@ -44,8 +44,6 @@ public class OffersFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
     }
 
 
@@ -165,6 +163,7 @@ public class OffersFragment extends Fragment {
 
                     FreeDealsRes res = response.body();
                     if (res != null) {
+                        Log.e(TAG, "loadData: Offer Fragment >>> " + res.toString());
                         processData(res);
                     }
                 }

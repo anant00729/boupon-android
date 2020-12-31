@@ -131,13 +131,13 @@ public class DialogFreeDealsFragment extends DialogFragment {
 
         tv_value.setText(item.getValue());
         Picasso.with(getContext())
-                .load(BASE_IMAGE_URL + item.getMainImage())
+                .load(item.getMainImage())
                 .resize(250, 180)
                 .placeholder(R.drawable.view_pager_banner_back)
                 .into(img_for_single_deal);
 
         Picasso.with(getContext())
-                .load(BASE_IMAGE_URL + item.getMainImage())
+                .load( item.getMainImage())
                 .resize(420, 390)
                 .placeholder(R.drawable.view_pager_banner_back)
                 .into(img_back);

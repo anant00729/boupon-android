@@ -339,7 +339,7 @@ MainActivity extends AppCompatActivity implements FreeDealsRechargeFragment.OnIt
 
     private void loadViewPager() {
         setupViewPager(viewPager);
-        viewPager.setOffscreenPageLimit(3);
+//        viewPager.setOffscreenPageLimit(3);
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -549,11 +549,11 @@ MainActivity extends AppCompatActivity implements FreeDealsRechargeFragment.OnIt
 
         editor.clear();
         if (editor.commit()) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra("invalid_token", message);
-            startActivity(intent);
-            finish();
+//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+//            intent.putExtra("invalid_token", message);
+//            startActivity(intent);
+//            finish();
         }
     }
 

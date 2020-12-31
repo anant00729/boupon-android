@@ -95,7 +95,7 @@ public class FreeDealsAdapter extends RecyclerView.Adapter<FreeDealsAdapter.Free
 
         if(item.getMainImage() != null && !item.getMainImage().isEmpty()){
             Picasso.with(mContext)
-                    .load(BASE_IMAGE_URL+item.getMainImage())
+                    .load(item.getMainImage())
                     .resize(320,270)
                     .placeholder(R.drawable.boupon_logo)
                     .into(holder.img_offer_item);

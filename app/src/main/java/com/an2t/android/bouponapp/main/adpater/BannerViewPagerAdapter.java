@@ -58,8 +58,8 @@ public class BannerViewPagerAdapter extends PagerAdapter {
         imageBannerData.getMainImage();
 
         Picasso.with(mContext)
-                .load(BASE_IMAGE_URL+imageBannerData.getMainImage())
-                .resize(520,470)
+                .load(imageBannerData.getMainImage() + (position) + imageBannerData.getKey())
+//                .resize(520,470)
                 .placeholder(R.drawable.view_pager_banner_back)
                 .into(img_main_rest_slider);
 

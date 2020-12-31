@@ -52,7 +52,7 @@ public interface ServicesAPI {
     @POST("initiaterecharge")
     Call<InitiateRecharge.InitiateRechargeRes> getRechargeRes(@Body InitiateRecharge initiateRecharge, @Header(AUTH_KEY) String auth_token);
 
-    @POST("freedeals")
+    @POST("home/freedeals")
     Call<FreeDealsRes> getAllFreeDealsForRecharge(@Header(AUTH_KEY) String auth_token);
 
     @POST("home/getHomeData")

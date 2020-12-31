@@ -128,11 +128,11 @@ public class DialogCouponFragment extends DialogFragment {
                     .into(img_back);
         }else {
             Picasso.with(getContext())
-                    .load(BASE_IMAGE_URL+item.getImage())
+                    .load(item.getImage())
                     .into(img_for_single_deal);
 
             Picasso.with(getContext())
-                    .load(BASE_IMAGE_URL+ item.getImage())
+                    .load(item.getImage())
                     .into(img_back);
         }
     }

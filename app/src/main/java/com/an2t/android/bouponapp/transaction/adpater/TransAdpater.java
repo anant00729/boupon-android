@@ -74,7 +74,7 @@ public class TransAdpater extends RecyclerView.Adapter<TransAdpater.TransViewHol
                     .into(holder.img_offer_item);
         }else{
             Picasso.with(mContext)
-                    .load(BASE_IMAGE_URL+history.getDealImage())
+                    .load(history.getDealImage())
                     .into(holder.img_offer_item);
         }
 
